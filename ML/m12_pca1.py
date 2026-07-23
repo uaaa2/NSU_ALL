@@ -5,9 +5,14 @@ import numpy as np
 from sklearn.metrics import accuracy_score
 import time
 from xgboost import XGBRFClassifier
-
+from sklearn.decomposition import PCA 
 #1 데이터
 x,y = load_breast_cancer(return_X_y=True)
+
+pca = PCA(n_components=10) #소실 될 수 있음
+x = pca.fit_transform(x)
+print(x.shape)
+exit()
 
 x_trian, x_test, y_train, y_test = train_test_split(
     x,y, shuffle=True, random_state=333 , train_size=0.8,
@@ -17,9 +22,9 @@ kfold = KFold(n_splits=5,shuffle=True,random_state=123)
 
 #2. 모델 
 parameters = {
-    'learning_rate' : 0.1,
-    'max_depth' : 6,
-    'n_estimators' : 200,
+    'learning_rate' : 0.9,
+    'max_depth' : 50,
+    'n_estimators' : 100,
 }
 
 model = XGBRFClassifier(**parameters) ## **로 딕셔너리 호출, *는 리스트 호출

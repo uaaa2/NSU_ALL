@@ -17,7 +17,7 @@ kfold = KFold(n_splits=5,shuffle=True,random_state=123)
 
 #3. 모델 
 
-model = R()
+model = RandomForestRegressor()
 
 #3 컴파일, 훈련
 #4 평가, 예측
