@@ -15,8 +15,6 @@ from sklearn.ensemble import RandomForestRegressor
 #model = DecisionTreeRegressor()    #1.0
 model = RandomForestRegressor()     #0.9742923584150744
 
-
-
 #decisiontree 
 #3. 컴파일, 훈련
 model.fit(x,y)

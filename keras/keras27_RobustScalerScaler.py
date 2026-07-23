@@ -27,6 +27,7 @@ x_train, x_test, y_train, y_test = train_test_split(
     random_state=310,
     shuffle=True, 
 )
+
 scaler = RobustScaler()
 x_train = scaler.fit_transform(x_train)
 x_test = scaler.transform(x_test)
@@ -46,9 +47,7 @@ model.add(Dense(1))
 #3. 컴파일, 훈련 
 model.compile(loss='mse', optimizer='adam')       
 model.fit(x_train , y_train , epochs=100 , batch_size=4)                                                     
-
-
-
+ 
 #4. 평가, 예측
 loss = model.evaluate(x_test , y_test)  #stand: loss =  1735.9307861328125 
 print("loss = ", loss)                  #Minmax: loss =  1843.2406005859375

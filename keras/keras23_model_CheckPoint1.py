@@ -103,5 +103,5 @@ print(y_submit)
 submit_csv['count'] = y_submit      #count 칼럼만 있는 y_submit값들을 datetime값과 count 칼럼만 있는 subnit_csv에 대입 
 print(submit_csv)
 
-submit_csv.to_csv(path + "sunmission_0717_1453.csv") #"C:\NSU_all\_data\sunmission_0717_.csv" 파일 생성
-print(f"걸린시간 : {round(end_time-start_time,2)} 초") #소수점 두번째 자리에서 자름
+# submit_csv.to_csv(path + "sunmission_0717_1453.csv") #"C:\NSU_all\_data\sunmission_0717_.csv" 파일 생성
+# print(f"걸린시간 : {round(end_time-start_time,2)} 초") #소수점 두번째 자리에서 자름
