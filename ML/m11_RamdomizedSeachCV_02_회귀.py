@@ -49,7 +49,6 @@ print(f"best_scores:", model.best_score_)   #과적합 가능성이 있다.
 
 print('model.score:', model.score(x_test,y_test))   #이거 써야됨
 
-
 y_predict = model.predict(x_test)
 print('r2_score :', r2_score(y_test, y_predict))    #회귀는 accuracy 대신 r2
 

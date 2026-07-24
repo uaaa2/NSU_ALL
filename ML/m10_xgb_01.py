@@ -21,7 +21,7 @@ kfold = KFold(n_splits=5,shuffle=True,random_state=123)
 
 parameters = [ 
     {'n_estimators': [100,150], 'max_depth': [4,8,10], 
-     "learning_rate" : [0.1,0.07,0.001]},  #학습률                     #18개
+     "learning_rate" : [0.1,0.07,0.001]},  #학습률, 조절 잘 하면 좋은값                     #18개
     {'max_depth':[4,8,9,11], 'learning_rate' : [0.2,0.01,0.004],},     #12개
     { 'min_child_weight':[2, 3, 5, 8], 'learning_rate':[0.2,0.01,0.001]}#12개 
 ]

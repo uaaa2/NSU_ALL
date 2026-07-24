@@ -34,7 +34,7 @@ parameters = [
 ]
 
 model = RandomizedSearchCV(XGBClassifier(), parameters,cv=kfold, verbose=1,)
-
+#cv = cross validation 
     
 
 #다른 모델을 래핑하는 함수

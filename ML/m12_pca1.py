@@ -1,3 +1,4 @@
+#CNN나오기 전엔 많이 사용했지만 현재는 차원(컬럼) 축소용으로 사용됨
 from sklearn.model_selection import KFold, cross_val_score, train_test_split
 from sklearn.model_selection import StratifiedKFold, GridSearchCV, RandomizedSearchCV
 from sklearn.datasets import load_breast_cancer
