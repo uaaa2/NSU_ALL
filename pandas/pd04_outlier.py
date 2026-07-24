@@ -1,5 +1,5 @@
 import numpy as np
-aaa = np.array([-10, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 50])
+aaa = np.array([-10, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 50,20])
 
 def outlier(data) :
     quatlie_1, q2 , quarylie_3 = np.percentile(data, [25, 50, 75])
